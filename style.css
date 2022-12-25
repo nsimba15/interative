@@ -1,0 +1,215 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width:1440px) {
+  header{
+    padding:20px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .hambur{
+    display: none;
+  }
+  main{
+    padding:10px 30px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .oculto{
+    display: none;
+  }
+  main .content .mobile .hidden{
+    display: none;
+  }
+  .content{
+    margin-right: 23px;
+    max-width: 560px;
+  }
+  .content .palavras{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content .palavras .word{
+    line-height: 20px;
+    width: 100%;
+    font-size: 13px;
+    padding-top: 10px;
+    width: 310px;
+  }
+  .conteudo{
+    padding: 10px;
+    background-color:hsl(240, 100%, 5%);
+    width: 280px;
+  }
+  .conteudo p{
+    padding: 20px 0px;
+    font-size: 13px;
+    color: #fff;
+    border-bottom: 1px solid rgb(245, 244, 244);
+  }
+  span{
+    font-size: 13px;
+    color: #fff;
+  }
+  .conteudo h1, .conteudo h2{
+    margin-bottom: 10px;
+    font-size: small;
+    padding-top: 20px;
+    color:  hsl(35, 77%, 62%);
+  }
+  .content .paragrafo{
+    width: 200px;
+    margin-top: 15px;
+    font-weight:900;
+    margin-right: 45px;
+    font-size: 33px; 
+    line-height: 45px
+  }
+  .palavras{
+    display: flex;
+  }
+  img{
+    width: 100%;
+  }
+  input[type="button"]{
+    margin: 40px 0 15px 0;
+    color: #fff;
+    background-color:  hsl(5, 85%, 63%);
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 13px;
+    width: 150px;
+  }
+  input[type="button"]:hover{
+    background-color:hsl(240, 100%, 5%);
+    cursor: pointer;
+  }
+  ul{
+    display: flex;
+  }
+  ul li{
+    list-style: none;
+    margin-left: 10px;
+  }
+  ul li:hover{
+    cursor: pointer;
+    color:  hsl(5, 85%, 63%);
+  }
+  p{
+    font-size: 15px;
+  }
+  section{
+    flex-wrap: wrap;
+    margin: 20px 30px ;
+    display: flex;
+  }
+  img{
+    max-width: 100%;
+  }
+  section > div{
+    align-items: center;
+    width: 270px;
+    height: 150px;
+    display: flex;
+  }
+  section > div .chave{
+    margin-left: 15px;
+  }
+  section > div .fotos{
+    width: 150px;
+  }
+  section .chave h1{
+    letter-spacing: 3px;
+    margin: 0 0 7px 0;
+  }
+  section .chave h3{
+    margin: 0 0 7px 0;
+    font-size: 13px;
+  }
+  section .chave p{
+    font-size: 13px;
+    line-height: 20px;
+  }
+  section .space{
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  header{
+    align-items: center;
+  }
+  header ul{
+    display: none;
+  }
+  header .hambur{
+    width: 30px;
+    display: block;
+  }
+  main .content{
+    max-width: 350px;
+  }
+  main .content .mobile .hidden{
+    display: block;
+  }
+  main .content .mobile .displa{
+    display: none;
+  }
+  main .palavras .paragrafo {
+    line-height: 25px;
+    display: flex;
+    font-size: 20px;
+  }
+  .conteudo{
+    width: 320px;
+  }
+  section > div .fotos{
+    width: 200px;
+  }
+  .luz{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 1024px;
+    background-color:rgba(0, 0, 0, 0.2);
+  }
+  .oculto{
+    transition: all 1s ease-in;
+    display: none;
+  }
+
+  .luz .escondido{
+    background-color: #fff;
+    width: 70%;
+    height: 1024px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  img{
+    max-width: 100%;
+  }
+  .luz .escondido .close{
+    margin-top: 20px;
+    margin-right: 50px;
+    width: 25px;
+    float: right;
+  }
+  .luz .escondido ul{
+    cursor: pointer;
+    line-height: 45px;
+    display: block;
+    margin: 150px 10px ;
+  }
+  .luz .escondido ul li{
+    cursor: pointer;
+  }
+  section > div h3:hover{
+    color:  hsl(5, 85%, 63%);
+  }
+}
